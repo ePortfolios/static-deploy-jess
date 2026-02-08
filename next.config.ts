@@ -1,7 +1,7 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  output: "export",
+  basePath: "/static-deploy-jess",
+  assetPrefix: "/static-deploy-jess/",
 };
 
 export default nextConfig;
