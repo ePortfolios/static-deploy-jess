@@ -11,10 +11,11 @@ export default function PasswordHashingPost() {
       <h1>Password Hashing (and why apps don’t store your real password)</h1>
 
       <img
-        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1600&q=60"
-        alt="Laptop screen with code representing cybersecurity"
+        src="/images/password-hashing.jpg"
+        alt="Combination lock on keyboard representing password security"
         style={{
           width: "100%",
+          height: "auto",
           borderRadius: 12,
           margin: "1rem 0 1.5rem",
         }}
@@ -27,8 +28,8 @@ export default function PasswordHashingPost() {
       </p>
 
       <p>
-        Hashing turns your password into a one-way scrambled value called a
-        <strong> hash</strong>. It can be checked for a match later, but it
+        Hashing turns your password into a one-way scrambled value called a{" "}
+        <strong>hash</strong>. It can be checked for a match later, but it
         cannot realistically be reversed back into the original password.
       </p>
 
@@ -41,9 +42,9 @@ export default function PasswordHashingPost() {
 
       <h2>Salt adds protection</h2>
       <p>
-        A <strong>salt</strong> is random data added before hashing. This ensures
-        that even if two users have the same password, their stored hashes will
-        be different.
+        A <strong>salt</strong> is random data added before hashing. This
+        ensures that even if two users have the same password, their stored
+        hashes will be different.
       </p>
 
       <h2>Hashing vs Encryption</h2>
@@ -54,7 +55,10 @@ export default function PasswordHashingPost() {
 
       <h2>What happens during login</h2>
       <ol>
-        <li>You create an account → the system stores a hashed version of your password.</li>
+        <li>
+          You create an account → the system stores a hashed version of your
+          password.
+        </li>
         <li>You log in later → the system hashes what you typed again.</li>
         <li>If the hashes match → access is granted.</li>
       </ol>
